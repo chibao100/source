@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+        <br /><br />
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-8" >
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Chức vụ</th>
+                            <th>Hệ số</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < ViewBag.chucvu.Count; i++)
+                        {
+                            <tr>
+                                <td class="col-sm-4">@ViewBag.chucvu[i].chuc_vu</td>
+                                <td class="col-sm-2">@ViewBag.chucvu[i].he_so</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

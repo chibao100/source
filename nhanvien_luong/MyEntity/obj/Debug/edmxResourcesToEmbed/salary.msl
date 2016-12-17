@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="salaryModelStoreContainer" CdmEntityContainer="salaryContext">
+    <EntitySetMapping Name="chucvu">
+      <EntityTypeMapping TypeName="salaryModel.chucvu">
+        <MappingFragment StoreEntitySet="chucvu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="chuc_vu" ColumnName="chuc_vu" />
+          <ScalarProperty Name="he_so" ColumnName="he_so" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ngach">
+      <EntityTypeMapping TypeName="salaryModel.ngach">
+        <MappingFragment StoreEntitySet="ngach">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="maso" ColumnName="maso" />
+          <ScalarProperty Name="ngach1" ColumnName="ngach" />
+          <ScalarProperty Name="nien_hang" ColumnName="nien_hang" />
+          <ScalarProperty Name="C_1" ColumnName="_1" />
+          <ScalarProperty Name="C_2" ColumnName="_2" />
+          <ScalarProperty Name="C_3" ColumnName="_3" />
+          <ScalarProperty Name="C_4" ColumnName="_4" />
+          <ScalarProperty Name="C_5" ColumnName="_5" />
+          <ScalarProperty Name="C_6" ColumnName="_6" />
+          <ScalarProperty Name="C_7" ColumnName="_7" />
+          <ScalarProperty Name="C_8" ColumnName="_8" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhanvien">
+      <EntityTypeMapping TypeName="salaryModel.nhanvien">
+        <MappingFragment StoreEntitySet="nhanvien">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="gioi_tinh" ColumnName="gioi_tinh" />
+          <ScalarProperty Name="ngay_sinh" ColumnName="ngay_sinh" />
+          <ScalarProperty Name="dan_toc" ColumnName="dan_toc" />
+          <ScalarProperty Name="ngay_vao_lam" ColumnName="ngay_vao_lam" />
+          <ScalarProperty Name="dia_chi" ColumnName="dia_chi" />
+          <ScalarProperty Name="so_cmnd" ColumnName="so_cmnd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhanvien_chucvu">
+      <EntityTypeMapping TypeName="salaryModel.nhanvien_chucvu">
+        <MappingFragment StoreEntitySet="nhanvien_chucvu">
+          <ScalarProperty Name="ngay" ColumnName="ngay" />
+          <ScalarProperty Name="totnhat" ColumnName="totnhat" />
+          <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+          <ScalarProperty Name="id_chucvu" ColumnName="id_chucvu" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhanvien_ngach">
+      <EntityTypeMapping TypeName="salaryModel.nhanvien_ngach">
+        <MappingFragment StoreEntitySet="nhanvien_ngach">
+          <ScalarProperty Name="ngay" ColumnName="ngay" />
+          <ScalarProperty Name="bac" ColumnName="bac" />
+          <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+          <ScalarProperty Name="id_ngach" ColumnName="id_ngach" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="luong">
+      <EntityTypeMapping TypeName="salaryModel.luong">
+        <MappingFragment StoreEntitySet="luong">
+          <ScalarProperty Name="dinhmuc" ColumnName="dinhmuc" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

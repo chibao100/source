@@ -1,0 +1,16 @@
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\TinhLuong.exe.config
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\TinhLuong.exe
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\TinhLuong.pdb
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\obj\Debug\TinhLuong.csprojResolveAssemblyReference.cache
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\obj\Debug\TinhLuong.Properties.Resources.resources
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\obj\Debug\TinhLuong.csproj.GenerateResource.Cache
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\obj\Debug\TinhLuong.exe
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\obj\Debug\TinhLuong.pdb
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\obj\Debug\TinhLuong.Form1.resources
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\MyEntity.dll
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\EntityFramework.dll
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\MyEntity.pdb
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\EntityFramework.xml
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\TinhLuong\obj\Debug\TinhLuong.Presentaion.Main.resources

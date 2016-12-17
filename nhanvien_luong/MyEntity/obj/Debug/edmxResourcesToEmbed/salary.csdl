@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="salaryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="chucvu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="chuc_vu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="he_so" Type="Single" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ngach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="maso" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ngach1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nien_hang" Type="Int32" Nullable="false" />
+    <Property Name="C_1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C_2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C_3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C_4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C_5" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C_6" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C_7" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C_8" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="nhanvien">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ma" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ten" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="gioi_tinh" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ngay_sinh" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dan_toc" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ngay_vao_lam" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dia_chi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="so_cmnd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="salaryContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="chucvu" EntityType="Self.chucvu" />
+    <EntitySet Name="ngach" EntityType="Self.ngach" />
+    <EntitySet Name="nhanvien" EntityType="Self.nhanvien" />
+    <EntitySet Name="nhanvien_chucvu" EntityType="salaryModel.nhanvien_chucvu" />
+    <EntitySet Name="nhanvien_ngach" EntityType="salaryModel.nhanvien_ngach" />
+    <EntitySet Name="luong" EntityType="salaryModel.luong" />
+  </EntityContainer>
+  <EntityType Name="nhanvien_chucvu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_chucvu" Type="Int32" Nullable="false" />
+    <Property Name="id_nhanvien" Type="Int32" Nullable="false" />
+    <Property Name="totnhat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngay" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="nhanvien_ngach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_ngach" Type="Int32" Nullable="false" />
+    <Property Name="id_nhanvien" Type="Int32" Nullable="false" />
+    <Property Name="bac" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ngay" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="luong">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dinhmuc" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

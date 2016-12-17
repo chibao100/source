@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="salaryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="chucvu">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="chuc_vu" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="he_so" Type="real" Nullable="false" />
+        </EntityType>
+        <EntityType Name="luong">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dinhmuc" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ngach">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="maso" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="ngach" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="nien_hang" Type="int" Nullable="false" />
+          <Property Name="_1" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="_2" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="_3" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="_4" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="_5" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="_6" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="_7" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="_8" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="nhanvien">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ma" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ten" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="gioi_tinh" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="ngay_sinh" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="dan_toc" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="ngay_vao_lam" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="dia_chi" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="so_cmnd" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="nhanvien_chucvu">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_chucvu" Type="int" Nullable="false" />
+          <Property Name="id_nhanvien" Type="int" Nullable="false" />
+          <Property Name="totnhat" Type="nvarchar" MaxLength="50" />
+          <Property Name="ngay" Type="date" />
+        </EntityType>
+        <EntityType Name="nhanvien_ngach">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_ngach" Type="int" Nullable="false" />
+          <Property Name="id_nhanvien" Type="int" Nullable="false" />
+          <Property Name="bac" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="ngay" Type="date" />
+        </EntityType>
+        <EntityContainer Name="salaryModelStoreContainer">
+          <EntitySet Name="chucvu" EntityType="Self.chucvu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="luong" EntityType="Self.luong" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ngach" EntityType="Self.ngach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="nhanvien" EntityType="Self.nhanvien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="nhanvien_chucvu" EntityType="Self.nhanvien_chucvu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="nhanvien_ngach" EntityType="Self.nhanvien_ngach" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="salaryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="chucvu">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="chuc_vu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="he_so" Type="Single" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ngach">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="maso" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ngach1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nien_hang" Type="Int32" Nullable="false" />
+          <Property Name="C_1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="C_2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="C_3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="C_4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="C_5" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="C_6" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="C_7" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="C_8" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="nhanvien">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ma" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ten" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="gioi_tinh" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ngay_sinh" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="dan_toc" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ngay_vao_lam" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dia_chi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="so_cmnd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="salaryContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="chucvu" EntityType="Self.chucvu" />
+          <EntitySet Name="ngach" EntityType="Self.ngach" />
+          <EntitySet Name="nhanvien" EntityType="Self.nhanvien" />
+          <EntitySet Name="nhanvien_chucvu" EntityType="salaryModel.nhanvien_chucvu" />
+          <EntitySet Name="nhanvien_ngach" EntityType="salaryModel.nhanvien_ngach" />
+          <EntitySet Name="luong" EntityType="salaryModel.luong" />
+        </EntityContainer>
+        <EntityType Name="nhanvien_chucvu">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_chucvu" Type="Int32" Nullable="false" />
+          <Property Name="id_nhanvien" Type="Int32" Nullable="false" />
+          <Property Name="totnhat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ngay" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="nhanvien_ngach">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_ngach" Type="Int32" Nullable="false" />
+          <Property Name="id_nhanvien" Type="Int32" Nullable="false" />
+          <Property Name="bac" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ngay" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="luong">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dinhmuc" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="salaryModelStoreContainer" CdmEntityContainer="salaryContext">
+          <EntitySetMapping Name="chucvu">
+            <EntityTypeMapping TypeName="salaryModel.chucvu">
+              <MappingFragment StoreEntitySet="chucvu">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="chuc_vu" ColumnName="chuc_vu" />
+                <ScalarProperty Name="he_so" ColumnName="he_so" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ngach">
+            <EntityTypeMapping TypeName="salaryModel.ngach">
+              <MappingFragment StoreEntitySet="ngach">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="maso" ColumnName="maso" />
+                <ScalarProperty Name="ngach1" ColumnName="ngach" />
+                <ScalarProperty Name="nien_hang" ColumnName="nien_hang" />
+                <ScalarProperty Name="C_1" ColumnName="_1" />
+                <ScalarProperty Name="C_2" ColumnName="_2" />
+                <ScalarProperty Name="C_3" ColumnName="_3" />
+                <ScalarProperty Name="C_4" ColumnName="_4" />
+                <ScalarProperty Name="C_5" ColumnName="_5" />
+                <ScalarProperty Name="C_6" ColumnName="_6" />
+                <ScalarProperty Name="C_7" ColumnName="_7" />
+                <ScalarProperty Name="C_8" ColumnName="_8" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nhanvien">
+            <EntityTypeMapping TypeName="salaryModel.nhanvien">
+              <MappingFragment StoreEntitySet="nhanvien">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ma" ColumnName="ma" />
+                <ScalarProperty Name="ten" ColumnName="ten" />
+                <ScalarProperty Name="gioi_tinh" ColumnName="gioi_tinh" />
+                <ScalarProperty Name="ngay_sinh" ColumnName="ngay_sinh" />
+                <ScalarProperty Name="dan_toc" ColumnName="dan_toc" />
+                <ScalarProperty Name="ngay_vao_lam" ColumnName="ngay_vao_lam" />
+                <ScalarProperty Name="dia_chi" ColumnName="dia_chi" />
+                <ScalarProperty Name="so_cmnd" ColumnName="so_cmnd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nhanvien_chucvu">
+            <EntityTypeMapping TypeName="salaryModel.nhanvien_chucvu">
+              <MappingFragment StoreEntitySet="nhanvien_chucvu">
+                <ScalarProperty Name="ngay" ColumnName="ngay" />
+                <ScalarProperty Name="totnhat" ColumnName="totnhat" />
+                <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+                <ScalarProperty Name="id_chucvu" ColumnName="id_chucvu" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nhanvien_ngach">
+            <EntityTypeMapping TypeName="salaryModel.nhanvien_ngach">
+              <MappingFragment StoreEntitySet="nhanvien_ngach">
+                <ScalarProperty Name="ngay" ColumnName="ngay" />
+                <ScalarProperty Name="bac" ColumnName="bac" />
+                <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+                <ScalarProperty Name="id_ngach" ColumnName="id_ngach" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="luong">
+            <EntityTypeMapping TypeName="salaryModel.luong">
+              <MappingFragment StoreEntitySet="luong">
+                <ScalarProperty Name="dinhmuc" ColumnName="dinhmuc" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

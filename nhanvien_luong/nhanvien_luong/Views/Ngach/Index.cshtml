@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+        <br /><br />
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Mã số</th>
+                        <th>Ngạch</th>
+                        <th>Niên hạng</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < ViewBag.ngach.Count; i++)
+                    {
+                        <tr>
+                            <td>@ViewBag.ngach[i].maso</td>
+                            <td>@ViewBag.ngach[i].ngach1</td>
+                            <td>@ViewBag.ngach[i].nien_hang</td>
+                            <td>@ViewBag.ngach[i].C_1</td>
+                            <td>@ViewBag.ngach[i].C_2</td>
+                            <td>@ViewBag.ngach[i].C_3</td>
+                            <td>@ViewBag.ngach[i].C_4</td>
+                            <td>@ViewBag.ngach[i].C_5</td>
+                            <td>@ViewBag.ngach[i].C_6</td>
+                            <td>@ViewBag.ngach[i].C_7</td>
+                            <td>@ViewBag.ngach[i].C_8</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

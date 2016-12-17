@@ -1,0 +1,5 @@
+﻿1. Vào SQL Server và khởi tạo mới 1 database name: salary
+2. Chọn database salary và run file(new query) : salary.sql
+3. Open solution: nhanvien_luong
+4. Chỉnh sữa  <connectionStrings>..... </connectionStrings> tại Web.config trong nhanvien_luong project
+5. Chỉnh sữa  <connectionStrings>..... </connectionStrings> tại App.config trong TinhLuong project

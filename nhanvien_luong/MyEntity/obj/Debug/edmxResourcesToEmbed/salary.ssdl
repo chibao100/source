@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="salaryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="chucvu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="chuc_vu" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="he_so" Type="real" Nullable="false" />
+  </EntityType>
+  <EntityType Name="luong">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dinhmuc" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ngach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="maso" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ngach" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="nien_hang" Type="int" Nullable="false" />
+    <Property Name="_1" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="_2" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="_3" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="_4" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="_5" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="_6" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="_7" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="_8" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="nhanvien">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ma" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="gioi_tinh" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="ngay_sinh" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="dan_toc" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="ngay_vao_lam" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="dia_chi" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="so_cmnd" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="nhanvien_chucvu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_chucvu" Type="int" Nullable="false" />
+    <Property Name="id_nhanvien" Type="int" Nullable="false" />
+    <Property Name="totnhat" Type="nvarchar" MaxLength="50" />
+    <Property Name="ngay" Type="date" />
+  </EntityType>
+  <EntityType Name="nhanvien_ngach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_ngach" Type="int" Nullable="false" />
+    <Property Name="id_nhanvien" Type="int" Nullable="false" />
+    <Property Name="bac" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ngay" Type="date" />
+  </EntityType>
+  <EntityContainer Name="salaryModelStoreContainer">
+    <EntitySet Name="chucvu" EntityType="Self.chucvu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="luong" EntityType="Self.luong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ngach" EntityType="Self.ngach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nhanvien" EntityType="Self.nhanvien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nhanvien_chucvu" EntityType="Self.nhanvien_chucvu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nhanvien_ngach" EntityType="Self.nhanvien_ngach" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
