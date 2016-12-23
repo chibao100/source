@@ -8,3 +8,13 @@ C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\MyEntity\bin\D
 C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\MyEntity\obj\Debug\MyEntity.dll
 C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\MyEntity\obj\Debug\MyEntity.pdb
 C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\MyEntity\obj\Debug\MyEntity.csprojResolveAssemblyReference.cache
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\bin\Debug\MyEntity.dll.config
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\bin\Debug\MyEntity.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\bin\Debug\MyEntity.pdb
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\bin\Debug\EntityFramework.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\bin\Debug\EntityFramework.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\obj\Debug\MyEntity.csprojResolveAssemblyReference.cache
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\obj\Debug\MyEntity.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\MyEntity\obj\Debug\MyEntity.pdb

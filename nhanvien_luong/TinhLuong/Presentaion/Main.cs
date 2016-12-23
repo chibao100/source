@@ -45,16 +45,26 @@ namespace TinhLuong.Presentaion
             }
             else
             {
-                if (dataGridView1.SelectedRows.Count > 0)
+                try
                 {
-                    DataGridViewRow row = dataGridView1.SelectedRows[0];
-                    string id = row.Cells[0].Value.ToString();
-                    string ma = row.Cells[1].Value.ToString();
-                    string ten = row.Cells[2].Value.ToString();
-                    Form1 a = new Form1(id, ma, ten);
-                    a.ShowDialog();
-                   
+                    if (dataGridView1.SelectedRows.Count > 0)
+                    {
+                        DataGridViewRow row = dataGridView1.SelectedRows[0];
+                        string id = row.Cells[0].Value.ToString();
+                        string ma = row.Cells[1].Value.ToString();
+                        string ten = row.Cells[2].Value.ToString();
+                        Form1 a = new Form1(id, ma, ten);
+                        a.ShowDialog();
+
+                    }
+                }catch(Exception ex){
+                    for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                    {
+                        dataGridView1.Rows[i].Selected = false;
+                    }
+                        
                 }
+               
             }
            
             

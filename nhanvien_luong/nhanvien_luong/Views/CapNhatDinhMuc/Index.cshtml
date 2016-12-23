@@ -26,11 +26,10 @@
     </script>
 </head>
 <body>
+    @RenderPage("/Views/Share/nav.cshtml")
     <div class="container">
-        <div class="page-header">
-            <h1 class="text-center">Cập Nhật Định Mức</h1>
-        </div>
-
+        <h1 class="text-center">Cập Nhật Định Mức</h1>
+        <br /><br />
         <div class="row">
             <div class="col-sm-offset-3 col-sm-6">
                 <form class="form-horizontal" action="/CapNhatDinhMuc/CapNhat" method="post">

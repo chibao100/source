@@ -22,3 +22,27 @@ C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\nhanvien_luong
 C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\nhanvien_luong\bin\MyEntity.pdb
 C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\nhanvien_luong\bin\EntityFramework.xml
 C:\Users\pc1\documents\visual studio 2013\Projects\nhanvien_luong\nhanvien_luong\bin\EntityFramework.SqlServer.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\nhanvien_luong.dll.config
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\nhanvien_luong.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\nhanvien_luong.pdb
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\EntityFramework.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\EntityFramework.SqlServer.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\MyEntity.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Helpers.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Mvc.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Razor.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Webpages.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Webpages.Razor.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\MyEntity.pdb
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\EntityFramework.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\EntityFramework.SqlServer.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Razor.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Webpages.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Webpages.Razor.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Helpers.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\bin\System.Web.Mvc.xml
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\obj\Debug\nhanvien_luong.csprojResolveAssemblyReference.cache
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\obj\Debug\nhanvien_luong.dll
+C:\Users\ThachChiBao\Desktop\source\source\nhanvien_luong\nhanvien_luong\obj\Debug\nhanvien_luong.pdb

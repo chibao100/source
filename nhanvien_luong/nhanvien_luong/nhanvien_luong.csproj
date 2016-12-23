@@ -143,6 +143,7 @@
     <Content Include="Views\Ngach\Index.cshtml" />
     <Content Include="Views\DinhMuc\Index.cshtml" />
     <Content Include="Views\CapNhatDinhMuc\Index.cshtml" />
+    <Content Include="Views\Share\nav.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

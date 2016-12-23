@@ -267,6 +267,10 @@ namespace TinhLuong
 
         public string HienThiTien(float total_luong2)
         {
+            if (total_luong2 == 0)
+            {
+                return "0" + "  VNĐ";
+            }
             CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
             String luongString = double.Parse(total_luong2.ToString()).ToString("#,###", cul.NumberFormat);
             return luongString + "  VNĐ";
